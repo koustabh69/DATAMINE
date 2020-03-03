@@ -1,0 +1,8 @@
+# read csv file
+df = pd.read_csv(url)
+print(df.head())
+# Convert the Time column to datatime format
+df['Time'] = pd.to_datetime(df.Time)
+print(df.head())
+#take out month
+print(df.Time.dt.month.head())
